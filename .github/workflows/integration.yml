@@ -11,7 +11,7 @@ jobs:
           with:
             name: static-site
         - name: View content
-          run: s -R
+          run: ls -R
         - name: Archive site content
           uses: thedoctor0/zip-release@master
           with:
