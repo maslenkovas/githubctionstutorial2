@@ -10,6 +10,12 @@ jobs:
           uses: actions/download-artifact@v3
           with:
             name: static-site
+        - name: View content
+          run: s -R
+        - name: Archive site content
+          uses: thedoctor0/zip-release@master
+          with:
+            filename: site.zip
 
   build-project:
     name: Build Project
